@@ -173,7 +173,7 @@ $colorGray: #848789;
 .text_block1_title {
   margin: 30px auto;
   text-align: center;
-  padding: 0px 15px;
+  padding: 0px 40px;
 }
 .text_block1_text {
   max-width: 1079px;
@@ -267,9 +267,6 @@ $colorGray: #848789;
   &_text {
     text-align: justify;
     min-width: 398px;
-    @media (max-width: 400px) {
-      min-width: 100%;
-    }
     &::after {
       content: "";
       display: block;
@@ -316,6 +313,13 @@ $colorGray: #848789;
       }
     }
 }
+@media (max-width: 550px) {
+  .text_block2 {
+    &_text {
+      min-width: 100%;
+    }
+  }
+}
 .main_block3 {
   display: flex;
   align-items: stretch;
@@ -340,9 +344,6 @@ $colorGray: #848789;
   &_text {
     text-align: justify;
     min-width: 398px;
-    @media (max-width: 400px) {
-      min-width: 100%;
-    }
     &::after {
       content: "";
       display: block;
@@ -405,6 +406,13 @@ $colorGray: #848789;
     }
   }
 }
+@media (max-width: 550px) {
+  .text_block3 {
+    &_text {
+      min-width: 100%;
+    }
+  }
+}
 .main_block4 {
   display: flex;
   align-items: stretch;
@@ -444,9 +452,6 @@ $colorGray: #848789;
   &_text {
     text-align: justify;
     min-width: 398px;
-    @media (max-width: 400px) {
-      min-width: 100%;
-    }
     &::after {
       content: "";
       display: block;
@@ -498,6 +503,13 @@ $colorGray: #848789;
   .text_block4 {
     &_icon {
       margin: 30px auto 15px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .text_block4 {
+    &_text {
+      min-width: 100%;
     }
   }
 }
