@@ -172,6 +172,8 @@ $colorGray: #848789;
 }
 .text_block1_title {
   margin: 30px auto;
+  text-align: center;
+  padding: 0px 15px;
 }
 .text_block1_text {
   max-width: 1079px;
@@ -199,6 +201,31 @@ $colorGray: #848789;
       margin: 0px 0px 50px 0px;
       text-align: justify;
     }
+    &_title {
+      margin: 20px auto;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .text_block1 {
+    &_icon {
+      margin: 30px auto 0px;
+    }
+    &_text {
+      margin: 0px 0px 30px 0px;
+      text-align: justify;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .text_block1 {
+    &_icon {
+      margin: 10px auto 0px;
+    }
+    &_text {
+      margin: 0px 0px 10px 0px;
+      text-align: justify;
+    }
   }
 }
 .main_block2 {
@@ -215,8 +242,9 @@ $colorGray: #848789;
   }
   &_logo {
     position: absolute;
-    top:50%;
+    top:40%;
     left: 50%;
+    width: 15%;
     transform: translateX(-50%);
     z-index: 1
   }
@@ -240,7 +268,7 @@ $colorGray: #848789;
     text-align: justify;
     min-width: 398px;
     @media (max-width: 400px) {
-      min-width: none;
+      min-width: 100%;
     }
     &::after {
       content: "";
@@ -313,7 +341,7 @@ $colorGray: #848789;
     text-align: justify;
     min-width: 398px;
     @media (max-width: 400px) {
-      min-width: none;
+      min-width: 100%;
     }
     &::after {
       content: "";
@@ -352,8 +380,9 @@ $colorGray: #848789;
   }
   &_logo {    
     position: absolute;
-    top:50%;
+    top:40%;
     left: 50%;
+    width: 15%;
     transform: translate(-50%);
     z-index: 1;
   }
@@ -390,8 +419,9 @@ $colorGray: #848789;
   }
   &_logo {
     position: absolute;
-    top:50%;
+    top:40%;
     left: 50%;
+    width: 15%;
     transform: translate(-50%);
     z-index: 1
   }
@@ -415,7 +445,7 @@ $colorGray: #848789;
     text-align: justify;
     min-width: 398px;
     @media (max-width: 400px) {
-      min-width: none;
+      min-width: 100%;
     }
     &::after {
       content: "";
@@ -593,7 +623,7 @@ input[type='radio']:checked:after {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #58a589 url(/img/logo/Logo_2.svg) no-repeat center;
+    background: #58a589 url(/img/logo/Logo_2.svg) no-repeat center/cover;
     opacity: 0.6;
   }
   &:hover::after {
@@ -706,7 +736,7 @@ input[type='radio']:checked:after {
     padding-left: 20px;
     @include font (18px, normal, 1px, none, $colorGray, normal);
     @media (max-width: 400px) {
-      min-width: none;
+      min-width: 100%;
     }
   }
   .block8_button {
@@ -736,7 +766,7 @@ input[type='radio']:checked:after {
     padding-left: 15px;
     @include font (14px, normal, 1px, none, $colorGray, normal);
     @media (max-width: 400px) {
-      min-width: none;
+      min-width: 100%;
     }
   }
   .block8_button {
