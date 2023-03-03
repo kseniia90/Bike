@@ -239,6 +239,9 @@ $colorGray: #848789;
   &_text {
     text-align: justify;
     min-width: 398px;
+    @media (max-width: 400px) {
+      min-width: none;
+    }
     &::after {
       content: "";
       display: block;
@@ -309,6 +312,9 @@ $colorGray: #848789;
   &_text {
     text-align: justify;
     min-width: 398px;
+    @media (max-width: 400px) {
+      min-width: none;
+    }
     &::after {
       content: "";
       display: block;
@@ -408,6 +414,9 @@ $colorGray: #848789;
   &_text {
     text-align: justify;
     min-width: 398px;
+    @media (max-width: 400px) {
+      min-width: none;
+    }
     &::after {
       content: "";
       display: block;
@@ -650,6 +659,9 @@ input[type='radio']:checked:after {
   &:active {
     border: 2px solid #58a589;
   }
+  @media (max-width: 400px) {
+    min-width: 200px;
+  }
 }
 .block8_button {
   min-width: 125px;
@@ -693,6 +705,9 @@ input[type='radio']:checked:after {
     min-height: 50px;
     padding-left: 20px;
     @include font (18px, normal, 1px, none, $colorGray, normal);
+    @media (max-width: 400px) {
+      min-width: none;
+    }
   }
   .block8_button {
     min-width: 100px;
@@ -720,6 +735,9 @@ input[type='radio']:checked:after {
     min-height: 40px;
     padding-left: 15px;
     @include font (14px, normal, 1px, none, $colorGray, normal);
+    @media (max-width: 400px) {
+      min-width: none;
+    }
   }
   .block8_button {
     display: block;
